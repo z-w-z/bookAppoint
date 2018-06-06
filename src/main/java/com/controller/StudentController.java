@@ -34,7 +34,7 @@ public class StudentController {
 			password = Long.parseLong(request.getParameter("password"));
 		}catch(Exception e)
 		{
-			//捕获类型转换失败等异常,会跳转至login页面
+			//捕获类型转换失败等异常,会跳转至login页面、、、
 			throw new CustomException("用户名或密码错误");
 		}		
 		Boolean boo = stuService.validateStu(stuId, password);
